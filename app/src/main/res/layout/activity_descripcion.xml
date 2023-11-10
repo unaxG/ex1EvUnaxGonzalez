@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDescripcion">
+
+    <ImageView
+        android:id="@+id/imageViewCiudad"
+        android:layout_width="375dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barcelona" />
+
+    <TextView
+        android:id="@+id/textViewTituloCiudad"
+        android:layout_width="129dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="158dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCiudad" />
+
+    <TextView
+        android:id="@+id/textViewPuntuacionCiudad"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="159dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloCiudad" />
+
+    <TextView
+        android:id="@+id/textViewDescripcionCiudad"
+        android:layout_width="371dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPuntuacionCiudad" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="45dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFavYVolver"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFavYVolver"
+        android:layout_width="130dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="45dp"
+        android:text="Marcar como favorito y volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonVolver" />
+</androidx.constraintlayout.widget.ConstraintLayout>

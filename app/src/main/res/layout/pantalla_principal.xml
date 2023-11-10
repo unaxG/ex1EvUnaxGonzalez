@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaPrincipalActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBarcelona"
+        android:layout_width="188dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="66dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barcelona" />
+
+    <ImageView
+        android:id="@+id/imageViewBilbao"
+        android:layout_width="179dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bilbao" />
+
+    <ImageView
+        android:id="@+id/imageViewGranada"
+        android:layout_width="179dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/puntuacionGranada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/granada" />
+
+    <ImageView
+        android:id="@+id/imageViewMadrid"
+        android:layout_width="198dp"
+        android:layout_height="152dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tituloMadrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/madrid" />
+
+    <TextView
+        android:id="@+id/puntuacionBarcelona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tituloBarcelona"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBarcelona" />
+
+    <TextView
+        android:id="@+id/puntuacionBilbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="92dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBilbao" />
+
+    <TextView
+        android:id="@+id/puntuacionGranada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="216dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tituloGranada" />
+
+    <TextView
+        android:id="@+id/puntuacionMadrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="216dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloBarcelona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:text="Barcelona"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBarcelona" />
+
+    <TextView
+        android:id="@+id/tituloBilbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:text="Bilbao"
+        app:layout_constraintEnd_toStartOf="@+id/puntuacionBilbao"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBilbao" />
+
+    <TextView
+        android:id="@+id/tituloGranada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="261dp"
+        android:text="Granada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloMadrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="260dp"
+        android:text="Madrid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/puntuacionMadrid" />
+</androidx.constraintlayout.widget.ConstraintLayout>
