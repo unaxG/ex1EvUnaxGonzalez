@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ex1EvUnaxGonzalez</string>
+
+    //MainActivity
+    <string name="bienvenida">BIENVENIDO</string>
+    <string name="botonIniciar">Iniciar</string>
+
+    //Pantalla principal
+    <string name="Barcelona">Barcelona</string>
+    <string name="Bilbao">Bilbao</string>
+    <string name="Granada">Granada</string>
+    <string name="Madrid">Madrid</string>
+
+
+
+
+
 </resources>

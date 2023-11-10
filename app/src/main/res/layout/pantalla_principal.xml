@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginTop="15dp"
-        android:text="Barcelona"
+        android:text="@string/Barcelona"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewBarcelona" />
 
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="4dp"
-        android:text="Bilbao"
+        android:text="@string/Bilbao"
         app:layout_constraintEnd_toStartOf="@+id/puntuacionBilbao"
         app:layout_constraintTop_toBottomOf="@+id/imageViewBilbao" />
 
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="261dp"
-        android:text="Granada"
+        android:text="@string/Granada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="260dp"
-        android:text="Madrid"
+        android:text="@string/Madrid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/puntuacionMadrid" />
 </androidx.constraintlayout.widget.ConstraintLayout>
