@@ -16,6 +16,7 @@ public class ActivityDescripcion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_descripcion);
 
+        //inicializacion de varibles
         Bundle bundle = getIntent().getExtras();
         String ciudad = bundle.getString("ciudad");
         int puntBar = bundle.getInt("puntBar");
@@ -31,8 +32,10 @@ public class ActivityDescripcion extends AppCompatActivity {
         TextView puntuacion = (TextView) findViewById(R.id.textViewPuntuacionCiudad);
         TextView descripcion = (TextView) findViewById(R.id.textViewDescripcionCiudad);
 
+        //nombre de la ciudad
         titulo.setText(ciudad);
 
+        //ifs que dictaminan que imagen, puntuacion y descripcion poner
         if(ciudad.equals("barcelona")){
             imagen.setImageResource(R.drawable.barcelona);
             titulo.setText("Barcelona");
@@ -83,7 +86,7 @@ public class ActivityDescripcion extends AppCompatActivity {
         }
 
 
-
+        //listener volver, tan solo devuelve a la pagina anterior
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,6 +99,7 @@ public class ActivityDescripcion extends AppCompatActivity {
             }
         });
 
+        //listener para volver y añadir 1 al contador de la puntuacion de la ciudad
         volverYFavorito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -16,6 +16,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pantalla_principal);
 
+        //Inicializacion de variables
         Bundle bundle = getIntent().getExtras();
         int puntBar = bundle.getInt("puntBar");
         int puntBil = bundle.getInt("puntBil");
@@ -32,11 +33,13 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
         TextView puntuacionGranada =(TextView) findViewById(R.id.puntuacionGranada );
         TextView puntuacionMadrid =(TextView) findViewById(R.id.puntuacionMadrid );
 
+        //escribir puntuacion
         puntuacionBarcelona.setText("Puntuacion: "+puntBar);
         puntuacionBilbao.setText("Puntuacion: "+puntBil);
         puntuacionGranada.setText("Puntuacion: "+puntGra);
         puntuacionMadrid.setText("Puntuacion: "+puntMad);
 
+        //listener de imagen barcelona
         barcelona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +54,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
             }
         });
 
-
+        //listener imagen bilbao
         bilbao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +70,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
 
         });
 
+        //listener imagen granada
         granada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +86,7 @@ public class PantallaPrincipalActivity extends AppCompatActivity {
 
         });
 
+        //listener imagen madrid
         madrid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
